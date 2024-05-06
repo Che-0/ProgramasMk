@@ -1,0 +1,12 @@
+  not  (   false and true or   false )
+false and not
+oooooooooo 
+true  
+false 
+            
+
+ 
+
+wwww
+truee 
+iiii
