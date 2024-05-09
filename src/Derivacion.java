@@ -9,8 +9,6 @@ public class Derivacion {
     int posicion = 0;
     boolean banderaBien;
 
-    public Derivacion() {
-    }
 
     public boolean Derivacion(ArrayList tokens) {
 
@@ -45,6 +43,10 @@ public class Derivacion {
 
          estadoE(posicion);
          return 0;
+         if ( banderaBien ){
+             return 1;
+         }
+
     }
 
     public int estadoE(int x){
@@ -109,17 +111,19 @@ public class Derivacion {
     }
 
     public void estadoX(){
-
+        System.out.println("uwu");
+        return ;
     }
 
     public void comprobar(){
-        if (posicion >=  this.tokens.size()){
+        if (posicion >=  this.tokens.size()-1){
             banderaBien = false;
-            return;
+
         }
         else {
             banderaBien = true;
         }
+
     }
 }
 
